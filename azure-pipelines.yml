@@ -10,8 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+-
 - task: CmdLine@2
   inputs:
     script: |
-      javac 2b.java
-      java 2b
+      javac ReverseString .java
+      java ReverseString
